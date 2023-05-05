@@ -7,7 +7,7 @@ namespace envioMasivoCorreos.Utils
 {
     public class SendEmail
     {
-        public SmtpClient InicializaConfiguracion(ConfigurationSmtpClient configurationSmtpClient)
+        public SmtpClient InitializeConfiguration(ConfigurationSmtpClient configurationSmtpClient)
         {
             return new SmtpClient(configurationSmtpClient.Host, configurationSmtpClient.Port) 
             {
@@ -25,7 +25,6 @@ namespace envioMasivoCorreos.Utils
             var response = false;
             try
             {                
-
                 client.Send(email);
 
                 response = true;
