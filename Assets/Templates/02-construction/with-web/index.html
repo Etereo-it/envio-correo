@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Construc. II</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      height: auto;
+      font-family: "Montserrat", sans-serif;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      width: 100%;
+      height: auto;
+      padding-bottom: 0.8vh;
+    }
+    nav > ul {
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .logo {
+      width: 23vw;
+      height: auto;
+    }
+    ul {
+      list-style: none;
+      margin-right: 1.5vw;
+    }
+    ul > li {
+      display: inline;
+    }
+    .icon {
+      height: auto;
+      width: 4vw;
+    }
+    .fondo {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      overflow: hidden;
+      position: relative;
+    }
+    .fondo img {
+      width: 100;
+      height: auto;
+    }
+    .fondo p strong {
+      font-size: 1.9vw;
+    }
+    .fondo p {
+      width: 50vw;
+      font-size: 1.7vw;
+      color: aliceblue;
+      position: absolute;
+      top: 40%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      text-align: right;
+    }
+    .url {
+      color: white;
+      position: absolute;
+      top: 70%;
+      left: 83%;
+      transform: translate(-50%, -50%);
+    }
+    .url button {
+      font-size: 1.8vw;
+      background-color: #009693;
+      border-radius: 05cqw;
+      color: aliceblue;
+      width: 18vw;
+      height: auto;
+      border: #009693;
+      padding: 5%;
+      cursor: pointer;
+    }
+    .introduction {
+      background-color: black;
+      color: white;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .introduction > .title-content {
+      font-size: 2vw;
+      color: white;
+      width: 100%;
+      height: auto;
+      padding-left: 2.5vw;
+    }
+    .introduction > .status {
+      width: 55%;
+    }
+    .introduction > .text {
+      width: 40%;
+      font-size: 2vw;
+      color: white;
+      text-align: left;
+    }
+    .container {
+      display: flex;
+    }
+    .container p {
+      color: white;
+      flex-direction: row;
+      font-size: 1.6vw;
+      padding-left: 3vw;
+      padding-top: 0%;
+    }
+    .container img {
+      width: 12%;
+      height: auto;
+      padding-left: 2.8vw;
+      padding-bottom: 5vw;
+      padding-top: 2.3vw;
+    }
+    .text2 {
+      text-decoration: underline rgb(1, 137, 234) 2px;
+      margin-top: 1vw;
+      padding-left: 2vw;
+    }
+
+    .text {
+      padding-left: 2vw;
+      border-left: 1px solid;
+      color: white;
+    }
+    .project {
+      display: flex;
+      flex-direction: row;
+    }
+    .project img {
+      width: 55%;
+      height: 30vw;
+    }
+    .project p {
+      width: 45%;
+      font-size: 1.9vw;
+      padding-left: 2.5vw;
+      padding-top: 5vw;
+    }
+    .conclucion {
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      background-color: #009693;
+      text-align: center;
+      font-size: 2vw;
+      color: white;
+      height: auto;
+    }
+    .contac {
+      background-color: white;
+      border: none;
+      color: black;
+      padding-top: 3px;
+      cursor: pointer;
+      width: 22vw;
+      font-size: 2vw;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .contac > img {
+      vertical-align: middle;
+      width: 4vw;
+      height: auto;
+    }
+    .conclucion-btn {
+      width: 60%;
+      margin-left: 20%;
+      display: flex;
+      flex-direction: row;
+    }
+    .conclucion-btn a:nth-of-type(1) {
+      margin-right: auto;
+    }
+    .conclucion-btn a:nth-of-type(2) {
+      margin-left: auto;
+    }
+    footer {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.8vw;
+      background-color: rgba(33, 37, 41, 255);
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="images/lgetereoss.png" alt="logo-etereoit" />
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/EtereoIT" target="_blank"
+              ><img class="icon" src="images/facebook.webp" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="icon" src="images/twitter.webp" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="icon" src="images/linkd.webp" alt="linkeding"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/etereoit.solutions/"
+              target="_blank"
+              ><img class="icon" src="images/instagram.webp" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article class="fondo">
+          <img
+            class="banner"
+            src="images/banner-contruction.webp"
+            alt="banner de costrucion"
+          />
+          <p>
+            <strong>Incrementa las vistas a tu sitio web</strong><br />
+            Desarrollamos sitios web para que<br />
+            las empresas potencien su marca y<br />
+            traciendan a nivel internacional.
+          </p>
+          <div class="url">
+            <a href="https://rebrand.ly/EtereoIT-contacto" target="_blank">
+              <button>
+                <strong>RENOVEMOS <br />TU SITIO WEB</strong>
+              </button>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="introduction">
+        <span class="title-content">
+          <h3><strong>ACTUALIZA TU NUEVO SITIO WEB</strong></h3>
+        </span>
+
+        <div class="status">
+          <article class="container">
+            <img src="images/icon-1.webp" alt="" />
+
+            <p>
+              <strong>Viabilidad y confianza</strong><br />
+              Una página web también funciona como<br />
+              garantía de que tu marca es real, confiable y<br />
+              es un negocio serio.
+            </p>
+          </article>
+
+          <article class="container">
+            <img src="images/icon-2.webp" alt="" />
+
+            <p>
+              <strong>Contacto con potenciales clientes</strong><br />
+              Con una buena estrategia de comunicación,<br />
+
+              en nuestra pagina favorecesel feedback con<br />
+              los clientes via online con cada uno de ellos.
+            </p>
+          </article>
+
+          <article class="container">
+            <img src="images/icon-3.webp" alt="" />
+
+            <p>
+              <strong>Exíbe tu trabajo</strong><br />
+              Demuestra tu profesionalismo mostrando tu<br />
+              portafolio de manera dinámica y ordenada.<br />
+              De esta manera mejoras tu marca empresarial.
+            </p>
+          </article>
+        </div>
+        <div class="text">
+          <p class="text2">
+            <strong
+              >Mejora tu presencia online<br />
+              con una web profesional</strong
+            ><br />
+          </p>
+          <p class="text2">
+            Si tu sitio web tiene problemas<br />
+            de carga, no es resposive, el<br />
+            diseño no es interectivo o<br />
+            tienes otros problemas en su <br />
+            funcionamiento; nosotros<br />
+            tenemos la solución
+          </p>
+        </div>
+      </section>
+      <section class="project">
+        <p>
+          <strong>Planificación desde el inicio </strong> <br />
+          Como en todos nuestros proyectos,<br />realizaremos una investigación
+          y<br />
+          reuniones con el objetivo de <br />
+          construir el sitio web ideal para que<br />
+          tu empresa exponga su propósito.
+        </p>
+        <img src="images/cuadro-1.webp" alt="" />
+      </section>
+      <section class="conclucion">
+        <p>
+          En <strong>ETÉREO IT</strong>contarás con un sistema de soporte,
+          seguridad y velocidad<br />
+          en todas las operaciones que realicen tus operadores y tus clientes<br />
+          <br />Comienza ahora y lleva tu empresa al siguiente nivel
+        </p>
+
+        <div class="conclucion-btn">
+          <a href="https://etereo-it.com/" target="_blank">
+            <button class="contac">
+              <img src="images/icon-web.png" alt="" /> ETERERO
+            </button>
+          </a>
+
+          <a href="https://rebrand.ly/EtereoIT-contacto" target="_blank">
+            <button class="contac">
+              <img src="images/whatsapp-icon.png" /> CONTACTO
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>©ETEREO IT - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

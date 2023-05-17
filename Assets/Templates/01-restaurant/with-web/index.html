@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>restaurant con web</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5vw;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+    }
+    nav > ul {
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .logo {
+      width: 25vw;
+      height: auto;
+    }
+    ul {
+      list-style: none;
+    }
+    ul > li {
+      display: inline;
+    }
+    .icon {
+      height: auto;
+      width: 5vw;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      margin-top: 0.5vh;
+    }
+    .text {
+      margin-left: 5vh;
+      margin-right: 5vh;
+    }
+
+    .conclucion {
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      background-color: #009693;
+      text-align: center;
+      font-size: 2vw;
+      color: white;
+    }
+    .contac {
+      background-color: white;
+      border: none;
+      color: black;
+      padding-top: 3px;
+      cursor: pointer;
+      width: 22vw;
+      font-size: 2vw;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .contac > img {
+      vertical-align: middle;
+      width: 4vw;
+      height: auto;
+    }
+    .conclucion-btn {
+      width: 60%;
+      margin-left: 20%;
+      display: flex;
+      flex-direction: row;
+    }
+    .conclucion-btn a:nth-of-type(1) {
+      margin-right: auto;
+    }
+    .conclucion-btn a:nth-of-type(2) {
+      margin-left: auto;
+    }
+
+    footer {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      width: 100%;
+      text-align: center;
+      font-size: 2vw;
+      background-color: rgba(33, 37, 41, 255);
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <img
+          class="logo"
+          src="images/logo-etereo-nav.png"
+          alt="logo-etereoit"
+        />
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/EtereoIT" target="_blank"
+              ><img class="icon" src="images/facebook.webp" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""><img class="icon" src="images/twitter.webp" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img class="icon" src="images/linkd.webp" alt="" /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/etereoit.solutions/"
+              target="_blank"
+              ><img class="icon" src="images/instagram.webp" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <img class="banner" src="images/banner.jpg" alt="" />
+      </section>
+      <section class="text">
+        <p>Hola, <strong>{EMPRESA!}</strong></p>
+        <p>
+          ¿Tu sitio web tiene problemas de carga?, ¿no es responsive?, ¿el
+          diseño no es interactivo o tienes otros problemas en su
+          funcionamiento?. Nosotros tenemos la solución.
+        </p>
+        <p>
+          En <b>EtereoIT</b> contamos con desarrolladores totalmente calificados
+          para darle el mejor rendimiento a tu página web y afrontar cualquier
+          reto o necesidad del mercado.
+        </p>
+      </section>
+      <section class="conclucion">
+        <p>
+          En <strong>ETÉREO IT</strong>contarás con un sistema de soporte,
+          seguridad y velocidad<br />
+          en todas las operaciones que realicen tus operadores y tus clientes<br />
+          <br />Comienza ahora y lleva tu empresa al siguiente nivel
+        </p>
+
+        <div class="conclucion-btn">
+          <a href="https://etereo-it.com/" target="_blank">
+            <button class="contac">
+              <img src="images/icon-web.png" alt="" /> ETERERO
+            </button>
+          </a>
+
+          <a href="https://rebrand.ly/EtereoIT-contacto" target="_blank">
+            <button class="contac">
+              <img src="images/whatsapp-icon.png" /> CONTACTO
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>©ETEREO IT - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
